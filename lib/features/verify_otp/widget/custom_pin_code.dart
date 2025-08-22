@@ -1,3 +1,4 @@
+import 'package:finance_app_v1/core/styling/app_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
@@ -28,6 +29,10 @@ class _CustomPinCodeState extends State<CustomPinCode> {
       length: 4,
       controller: pinCodeController,
       enableActiveFill: true,
+      textStyle: AppStyles.primaryHeadLineStyles.copyWith(
+        fontSize: 22.sp,
+        fontWeight: FontWeight.w700
+      ),
       pinTheme: PinTheme(
         fieldWidth: 70,
         fieldHeight: 60,

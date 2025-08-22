@@ -7,4 +7,5 @@ class AppRoutes{
   static const String forgetPassword = '/forgetPassword';
   static const String createNewPasswordScreen = '/createNewPassword';
   static const String passwordChangedScreen = '/passwordChangedScreen';
+  static const String mainScreen = '/mainScreen';
 }

@@ -10,11 +10,6 @@ import 'package:finance_app_v1/features/verify_otp/widget/custom_pin_code.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-
-
-import '../../core/routing/app_routes.dart';
-import '../../core/styling/app_color.dart';
 
 class VerifyOtpScreen extends StatelessWidget {
    VerifyOtpScreen({super.key});
@@ -44,12 +39,9 @@ class VerifyOtpScreen extends StatelessWidget {
                   ),
                 ),
                 const HeightSpace(height: 28),
-                SizedBox(
-                  width: 280.w,
-                  child: Text(
-                    'OTP Verification',
-                    style: AppStyles.primaryHeadLineStyles,
-                  ),
+               Text(
+                  'OTP Verification',
+                  style: AppStyles.primaryHeadLineStyles,
                 ),
                 const HeightSpace(height: 10),
                 SizedBox(

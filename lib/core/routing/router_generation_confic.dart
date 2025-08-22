@@ -3,6 +3,7 @@ import 'package:finance_app_v1/features/auth/screens/create_new_password_screen.
 import 'package:finance_app_v1/features/auth/screens/forget_password_screen.dart';
 import 'package:finance_app_v1/features/auth/login_screen.dart';
 import 'package:finance_app_v1/features/auth/screens/register_screen.dart';
+import 'package:finance_app_v1/features/main_screen/main_screen.dart';
 import 'package:finance_app_v1/features/onBoarding/on_boarding_screen.dart';
 import 'package:finance_app_v1/features/verify_otp/verify_otp_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -11,13 +12,20 @@ import '../../features/auth/screens/password_changed_screen.dart';
 
 class RouterGenerationConfig {
   static GoRouter goRouter = GoRouter(
-    initialLocation: AppRoutes.verifyOTPScreen,
+    initialLocation: AppRoutes.mainScreen,
     routes: [
       GoRoute(
         path: AppRoutes.onBoardingScreen,
         name: AppRoutes.onBoardingScreen,
         builder: (context, state) {
           return const OnBoardingScreen();
+        },
+      ),
+      GoRoute(
+        path: AppRoutes.mainScreen,
+        name: AppRoutes.mainScreen,
+        builder: (context, state) {
+          return const MainScreen();
         },
       ),
       GoRoute(
