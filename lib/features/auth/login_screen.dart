@@ -2,6 +2,7 @@ import 'package:finance_app_v1/core/routing/app_routes.dart';
 import 'package:finance_app_v1/core/styling/app_assets.dart';
 import 'package:finance_app_v1/core/styling/app_color.dart';
 import 'package:finance_app_v1/core/styling/app_style.dart';
+import 'package:finance_app_v1/core/widgets/custom_button_text.dart';
 import 'package:finance_app_v1/core/widgets/custom_container.dart';
 import 'package:finance_app_v1/core/widgets/custom_text_field.dart';
 import 'package:finance_app_v1/core/widgets/primary_button_widget.dart';
@@ -118,30 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const HeightSpace(height: 22),
                   SocialLoginWidget(),
                   const HeightSpace(height: 155),
-                  Center(
-                    child: InkWell(
-                      onTap: (){
-                         GoRouter.of(context).pushNamed(AppRoutes.registerScreen);
-                      },
-                      child: RichText(
-                        text: TextSpan(
-                          text: 'Don’t have an account? ',
-                          style: AppStyles.black16w600Styles.copyWith(
-                            color: AppColor.primaryColor,
-                            fontWeight: FontWeight.w400,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: "Register Now",
-                              style: AppStyles.black16w600Styles.copyWith(
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+                  CustomButtonText(header2Text: 'Register ',header1Text: "NowDon’t have an account? ",),
                 ],
               ),
             ),

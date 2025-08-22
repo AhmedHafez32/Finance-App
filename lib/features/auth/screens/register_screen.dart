@@ -1,3 +1,4 @@
+import 'package:finance_app_v1/core/widgets/custom_button_text.dart';
 import 'package:finance_app_v1/core/widgets/primary_button_widget.dart';
 import 'package:finance_app_v1/features/auth/widget/custom_divider.dart';
 import 'package:finance_app_v1/features/auth/widget/social_login_widget.dart';
@@ -25,7 +26,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   late TextEditingController emailController;
   late TextEditingController passwordController;
   late TextEditingController confirmPasswordController;
-
 
   final formKey = GlobalKey<FormState>();
 
@@ -114,40 +114,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     },
                   ),
                   const HeightSpace(height: 30),
-                  PrimaryButtonWidget(buttonText: 'Register', onPress: (){
-                    if(formKey.currentState!.validate()){}
-                  }),
+                  PrimaryButtonWidget(
+                    buttonText: 'Register',
+                    onPress: () {
+                      if (formKey.currentState!.validate()) {}
+                    },
+                  ),
                   const HeightSpace(height: 35),
-                  CustomDivider(text: 'Or Register with',),
+                  CustomDivider(text: 'Or Register with'),
                   const HeightSpace(height: 22),
                   SocialLoginWidget(),
                   const HeightSpace(height: 54),
-                 // Already have an account? Login Now
-                  Center(
-                    child: InkWell(
-                      onTap: (){
-                        GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
-                      },
-                      child: RichText(
-                        text: TextSpan(
-                          text: 'Already have an account? ',
-                          style: AppStyles.black16w600Styles.copyWith(
-                            color: AppColor.primaryColor,
-                            fontWeight: FontWeight.w400,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: "Login Now",
-                              style: AppStyles.black16w600Styles.copyWith(
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  // Already have an account? Login Now
+                  CustomButtonText(
+                    header1Text: 'Already have an account? ',
+                    header2Text: "Login Now",
                   ),
-
                 ],
               ),
             ),
