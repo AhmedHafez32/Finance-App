@@ -4,6 +4,8 @@ class AppAssets{
   static const String sticker = 'assets/images/sticker.png';
   static const String addIconBackground = 'assets/images/addIconBackground.png';
   static const String addIconPlus = 'assets/images/addIconPlus.png';
+  static const String layer1 = 'assets/images/layer1.png';
+  static const String layer2 = 'assets/images/layer2.png';
 
 
   static const String facebookSVGIcon = 'assets/icons/facebook.svg';
