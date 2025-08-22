@@ -57,7 +57,7 @@ class ForgetPassword extends StatelessWidget {
                 const HeightSpace(height: 38),
                 PrimaryButtonWidget(buttonText: 'Send Code', onPress: () {}),
                 const HeightSpace(height: 362),
-               CustomButtonText(header1Text: 'Remember Password? ',header2Text: "Login",)
+               CustomButtonText(blueText: 'Remember Password? ',blackText: "Login",)
               ],
             ),
           ),

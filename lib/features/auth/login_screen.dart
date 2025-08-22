@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const HeightSpace(height: 22),
                   SocialLoginWidget(),
                   const HeightSpace(height: 155),
-                  CustomButtonText(header2Text: 'Register ',header1Text: "NowDon’t have an account? ",),
+                  CustomButtonText(blackText: 'Register ',blueText: "NowDon’t have an account? ",),
                 ],
               ),
             ),

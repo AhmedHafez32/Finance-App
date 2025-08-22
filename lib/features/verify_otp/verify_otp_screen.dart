@@ -64,7 +64,7 @@ class VerifyOtpScreen extends StatelessWidget {
                 const HeightSpace(height: 38),
                 PrimaryButtonWidget(buttonText: 'Verify', onPress: () {}),
                 Spacer(),
-                CustomButtonText(header1Text: 'Didn’t received code? ',header2Text: 'Resend',),
+                CustomButtonText(blueText: 'Didn’t received code? ',blackText: 'Resend',),
                 const HeightSpace(height: 26),
               ],
             ),

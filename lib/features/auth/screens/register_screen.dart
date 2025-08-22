@@ -127,8 +127,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   const HeightSpace(height: 54),
                   // Already have an account? Login Now
                   CustomButtonText(
-                    header1Text: 'Already have an account? ',
-                    header2Text: "Login Now",
+                    blueText: 'Already have an account? ',
+                    blackText: "Login Now",
                   ),
                 ],
               ),
