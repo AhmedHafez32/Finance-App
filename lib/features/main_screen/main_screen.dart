@@ -1,6 +1,6 @@
 import 'package:finance_app_v1/core/styling/app_assets.dart';
 import 'package:finance_app_v1/core/styling/app_color.dart';
-import 'package:finance_app_v1/features/home_page/home_page.dart';
+import 'package:finance_app_v1/features/home_page/home_page_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -12,7 +12,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   List<Widget> screens = [
-    HomePage(),
+    HomePageScreen(),
     Container(width: 20, height: 20, color: Colors.blue),
     Container(width: 20, height: 20, color: Colors.yellow),
     Container(width: 20, height: 20, color: Colors.purple),
