@@ -1,14 +1,14 @@
 import 'package:finance_app_v1/core/routing/app_routes.dart';
-import 'package:finance_app_v1/features/auth/screens/create_new_password_screen.dart';
-import 'package:finance_app_v1/features/auth/screens/forget_password_screen.dart';
+import 'package:finance_app_v1/features/auth/create_new_password_screen.dart';
+import 'package:finance_app_v1/features/auth/forget_password_screen.dart';
 import 'package:finance_app_v1/features/auth/login_screen.dart';
-import 'package:finance_app_v1/features/auth/screens/register_screen.dart';
+import 'package:finance_app_v1/features/auth/register_screen.dart';
 import 'package:finance_app_v1/features/main_screen/main_screen.dart';
 import 'package:finance_app_v1/features/onBoarding/on_boarding_screen.dart';
 import 'package:finance_app_v1/features/verify_otp/verify_otp_screen.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/auth/screens/password_changed_screen.dart';
+import '../../features/auth/password_changed_screen.dart';
 
 class RouterGenerationConfig {
   static GoRouter goRouter = GoRouter(
@@ -25,8 +25,7 @@ class RouterGenerationConfig {
         path: AppRoutes.mainScreen,
         name: AppRoutes.mainScreen,
         builder: (context, state) {
-          return const MainScreen();
-        },
+          return const MainScreen();        },
       ),
       GoRoute(
         path: AppRoutes.loginScreen,
