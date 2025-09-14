@@ -1,6 +1,4 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dots_indicator/dots_indicator.dart';
-import 'package:finance_app_v1/core/styling/app_color.dart';
 import 'package:finance_app_v1/core/widgets/spacing_widgets.dart';
 import 'package:finance_app_v1/features/home_page/widget/custom_dots_indecator_widget.dart';
 import 'package:flutter/material.dart';
